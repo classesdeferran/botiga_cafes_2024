@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins&display=swap");
+
+/* S --> 500px
+M --> 800px
+L --> 1400px
+XL --> 2000px */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --primary-color: #053617;
+  --font-size: 20px;
+  --width-l: 1200px;
+}
+
+header {
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  color: white;
+  font-size: 10vw;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+img {
+  display:block;
+}
+
+nav {
+  background-color: var(--primary-color);
+  /* margin-top: -8px; */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.width-l {
+  max-width: var(--width-l);
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 10vw;
+ 
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {  
+  color: white;
+  font-size: var(--font-size);
+}
+
+nav a:hover {
+  border-bottom: 4px solid white;
+}
+
+.flex-2 {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 1rem; */
+  align-items: center;
+}
+
+.flex-2 > div {
+  width: 50%;
+}
+
+.flex-2 p {
+  font-size: 1.5rem;
+}
+
+main section:nth-child(even) {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+
+.section-text {
+  padding: 0 2rem;
+}
+
+/* .flex-2 > div {
+    display: flex;
+    align-items: center;
+} */
+main section:last-child h2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+.grid-3 p {
+    color: red;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+cite {
+    font-size: 1.2rem;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+}
+
+footer h2 {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+#info {
+  font-size: 1.5rem;
+}
+
+.sociales {
+display: flex;
+justify-content: start;
+gap: 0.5rem;
+}
+
+
+.sociales img {
+  width: 40%;
+
+}
+
+footer a {
+  color: white;
+  font-size: 0.8rem;
+}
+
+footer a:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
